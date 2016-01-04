@@ -10,6 +10,7 @@
   6. Compass: Sass compiler
 
 #### Branches:
+-----
 When significant additions are anticipated they should be created on a branch separate from master. The master branch should not contain incomplete pieces of the app. When commits are made on the master branch they should be ready to be promoted to staging meaning all tests must pass and the source code within the master branch must be ready for the world to use.
 
 #### Naming Convention:
