@@ -1,0 +1,20 @@
+/* line 5, ../Sass/Sites.scss */
+.sites {
+  background-color: #252525;
+}
+/* line 28, ../Sass/Sites.scss */
+.sites .site {
+  background-color: mediumseagreen;
+  display: table-cell;
+  min-height: 500px;
+  position: relative;
+  width: 50%;
+}
+/* line 35, ../Sass/Sites.scss */
+.sites .site img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
