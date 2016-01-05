@@ -32,10 +32,12 @@
         {% for site in sites %}
           <div class="site">
             <img src="{% static 'Sites/Thumbnails/'|add:site.thumbnail_filename %}" alt="{{ site.thumbnail_filename }}">
-            <a href="{{ site.link }}">
-              <h4>{{ site.title }} <span>{{ site.subtitle }}</span></h4>
-              <p>{{ site.description }}</p>
-            </a>
+            <div>
+              <a href="{{ site.link }}">
+                <h4>{{ site.title }} <span>{{ site.subtitle }}</span></h4>
+                <p>{{ site.description }}</p>
+              </a>
+            </div>
           </div> <!-- .site -->
         {% endfor %}
       </div> <!-- .sites -->
