@@ -5,9 +5,13 @@
   1. Ubuntu 12.04
   2. Git: Version control, pushing to different environments
   3. Apache HTTPD: Serving the site and static files
-  4. Skeleton: Front-end framework
+  4. WSGI module: WSGI interface between Python and Apache
+  5. Python: Back-end language
+  6. Django: Back-end framework
   5. Sass: CSS preprocessor
   6. Compass: Sass compiler
+  6. CoffeeScript: JavaScript language
+  7. CoffeeScript CLI: CoffeeScript compiler
 
 #### Branches:
 -----
@@ -29,4 +33,4 @@ Version numbers should follow the standard pattern of the release version number
 
 #### Preferred Operating System:
 ----
-Ubuntu 12.04 LTS should be the operating system used for serving the application. Other operating systems have not been tested nor configured to support the application, although it uses mostly cross compatible dependencies.
+Ubuntu 12.04 LTS or later should be the operating system used for serving the application. Other operating systems have not been tested nor configured to support the application, although it uses mostly cross compatible dependencies.
