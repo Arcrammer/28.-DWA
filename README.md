@@ -1,10 +1,10 @@
-# Deployment of Web Applications
+# Deployment of Web Applications » Portfolio
 
 #### Requirements:
 -----
-  1. Ubuntu 12.04
+  1. Ubuntu 12.04+
   2. Git: Version control, pushing to different environments
-  3. Apache HTTPD: Serving the site and static files
+  3. Apache HTTPD: Serving the site and its' assets
   4. WSGI module: WSGI interface between Python and Apache
   5. Python: Back-end language
   6. Django: Back-end framework
@@ -33,4 +33,4 @@ Version numbers should follow the standard pattern of the release version number
 
 #### Preferred Operating System:
 ----
-Ubuntu 12.04 LTS or later should be the operating system used for serving the application. Other operating systems have not been tested nor configured to support the application, although it uses mostly cross compatible dependencies.
+Ubuntu 12.04 or later should be the operating system used for serving the application. Other operating systems have not been tested nor configured to support the application, although it uses mostly cross compatible dependencies.
