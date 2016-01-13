@@ -1,10 +1,90 @@
-/* line 5, ../Sass/Main.scss */
+/* line 5, Main.scss */
 body {
   background-color: #f8f8ff;
   font-family: 'Bebas Neue';
 }
 
-/* line 11, ../Sass/Main.scss */
+/* line 12, Main.scss */
+.greeting {
+  overflow: hidden;
+  text-align: center;
+}
+/* line 16, Main.scss */
+.greeting .overlay {
+  background-color: rgba(255, 255, 255, 0.915);
+}
+/* line 20, Main.scss */
+.greeting .image-holder {
+  overflow: auto;
+}
+/* line 23, Main.scss */
+.greeting .image-holder img {
+  min-height: 100%;
+}
+/* line 28, Main.scss */
+.greeting .overlay,
+.greeting div:last-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 37, Main.scss */
+.greeting div:last-of-type {
+  border-right: 17.5px solid white;
+  border-bottom: 17.5px solid white;
+  border-left: 17.5px solid white;
+  height: 40%;
+  margin: auto;
+  min-height: 17.5rem;
+  width: 60%;
+}
+/* line 48, Main.scss */
+.greeting div:last-of-type::before, .greeting div:last-of-type::after {
+  background-color: white;
+  content: '';
+  height: 17.5px;
+  position: absolute;
+  top: 0;
+  width: 12.13592%;
+}
+/* line 58, Main.scss */
+.greeting div:last-of-type::before {
+  left: -1%;
+}
+/* line 64, Main.scss */
+.greeting div:last-of-type::after {
+  right: -1%;
+}
+/* line 70, Main.scss */
+.greeting div:last-of-type h1 {
+  font-size: 4em;
+  letter-spacing: 5px;
+  margin-left: 1.5%;
+  position: absolute;
+  top: -7.5%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+/* line 81, Main.scss */
+.greeting div:last-of-type h4 {
+  letter-spacing: 3.5px;
+  line-height: 115%;
+  font-size: 3em;
+  font-weight: 300;
+  position: relative;
+  top: 35%;
+}
+/* line 92, Main.scss */
+.greeting div:last-of-type button {
+  display: block;
+  margin: auto;
+  top: 50%;
+}
+
+/* line 101, Main.scss */
 .aquamarine-button {
   background-color: transparent;
   border-color: #47e0cd;
@@ -24,20 +104,20 @@ body {
   text-transform: uppercase;
   transition: all 150ms;
 }
-/* line 35, ../Sass/Main.scss */
+/* line 125, Main.scss */
 .aquamarine-button:hover, .aquamarine-button:active, .aquamarine-button:focus {
   background-color: #48e0ce;
   color: white;
   border-color: white;
   border-width: 2px;
 }
-/* line 46, ../Sass/Main.scss */
+/* line 136, Main.scss */
 .aquamarine-button:active {
   background-color: #167368;
 }
 
 @media (max-width: 750px) {
-  /* line 56, ../Sass/Main.scss */
+  /* line 146, Main.scss */
   .greeting .image-holder {
     position: absolute;
     top: 0;
@@ -45,36 +125,36 @@ body {
     bottom: 0;
     left: 0;
   }
-  /* line 65, ../Sass/Main.scss */
+  /* line 155, Main.scss */
   .greeting div:last-of-type {
     border-right: 12.5px solid white;
     border-bottom: 12.5px solid white;
     border-left: 12.5px solid white;
     padding: 2.3511% 8.45411%;
   }
-  /* line 73, ../Sass/Main.scss */
+  /* line 163, Main.scss */
   .greeting div:last-of-type::before, .greeting div:last-of-type::after {
     height: 12.5px;
     width: 5.66343%;
   }
-  /* line 79, ../Sass/Main.scss */
+  /* line 169, Main.scss */
   .greeting div:last-of-type h1 {
     font-size: 2.5em;
     margin-left: 1%;
     letter-spacing: 2.5px;
     top: -5%;
   }
-  /* line 86, ../Sass/Main.scss */
+  /* line 176, Main.scss */
   .greeting div:last-of-type h4 {
     top: 15%;
   }
-  /* line 90, ../Sass/Main.scss */
+  /* line 180, Main.scss */
   .greeting div:last-of-type button {
     top: 27.5%;
   }
 }
 @media (max-width: 400px) {
-  /* line 99, ../Sass/Main.scss */
+  /* line 189, Main.scss */
   .greeting div:last-of-type {
     padding: 1%;
     width: 80%;
@@ -99,11 +179,11 @@ body {
   font-weight: 300;
 }
 /* Outline Out */
-/* line 142, ../Sass/Main.scss */
+/* line 232, Main.scss */
 .hvr-outline-out {
   position: relative;
 }
-/* line 145, ../Sass/Main.scss */
+/* line 235, Main.scss */
 .hvr-outline-out:before {
   content: '';
   position: absolute;
@@ -116,7 +196,7 @@ body {
   -webkit-transition-property: top, right, bottom, left;
   transition-property: top, right, bottom, left;
 }
-/* line 158, ../Sass/Main.scss */
+/* line 248, Main.scss */
 .hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
   border-color: #47e0cd;
   border-color: -moz-linear-gradient(-45deg, #47e0cd 0%, #2dcebb 100%);

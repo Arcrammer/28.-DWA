@@ -1,37 +1,130 @@
-/* line 5, ../Sass/Sites.scss */
+/* line 6, ../Sass/Sites.scss */
+.greeting {
+  overflow: hidden;
+  text-align: center;
+}
+/* line 10, ../Sass/Sites.scss */
+.greeting .overlay {
+  background-color: rgba(255, 255, 255, 0.915);
+}
+/* line 14, ../Sass/Sites.scss */
+.greeting .image-holder {
+  overflow: auto;
+}
+/* line 17, ../Sass/Sites.scss */
+.greeting .image-holder img {
+  min-height: 100%;
+}
+/* line 22, ../Sass/Sites.scss */
+.greeting .overlay,
+.greeting div:last-of-type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 31, ../Sass/Sites.scss */
+.greeting div:last-of-type {
+  border-right: 17.5px solid white;
+  border-bottom: 17.5px solid white;
+  border-left: 17.5px solid white;
+  height: 40%;
+  margin: auto;
+  min-height: 17.5rem;
+  width: 60%;
+}
+/* line 42, ../Sass/Sites.scss */
+.greeting div:last-of-type::before, .greeting div.sites:last-of-type::after, .greeting div:last-of-type::after {
+  background-color: white;
+  content: '';
+  height: 17.5px;
+  position: absolute;
+  top: 0;
+  width: 12.13592%;
+}
+/* line 52, ../Sass/Sites.scss */
+.greeting div:last-of-type::before, .greeting div.sites:last-of-type::after {
+  left: -1%;
+}
+/* line 58, ../Sass/Sites.scss */
+.greeting div:last-of-type::after {
+  right: -1%;
+}
+/* line 64, ../Sass/Sites.scss */
+.greeting div:last-of-type h1 {
+  font-size: 4em;
+  letter-spacing: 5px;
+  margin-left: 1.5%;
+  position: absolute;
+  top: -7.5%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+/* line 75, ../Sass/Sites.scss */
+.greeting div:last-of-type h4 {
+  letter-spacing: 3.5px;
+  line-height: 115%;
+  font-size: 3em;
+  font-weight: 300;
+  position: relative;
+  top: 35%;
+}
+/* line 86, ../Sass/Sites.scss */
+.greeting div:last-of-type button {
+  display: block;
+  margin: auto;
+  top: 50%;
+}
+
+/* line 95, ../Sass/Sites.scss */
 .sites {
   background-color: #252525;
+  overflow: auto;
+  margin-top: -15%;
+  padding: 0 15%;
 }
-/* line 8, ../Sass/Sites.scss */
+/* line 101, ../Sass/Sites.scss */
+.sites::before, .sites::after, .sites::after {
+  clear: both;
+  content: '';
+  display: block;
+  margin-left: -25%;
+  width: 150%;
+  height: 100px;
+}
+/* line 111, ../Sass/Sites.scss */
 .sites::before, .sites::after {
   background: -moz-linear-gradient(top, black 0%, rgba(37, 37, 37, 0) 100%);
   background: -webkit-linear-gradient(top, black 0%, rgba(37, 37, 37, 0) 100%);
   background: linear-gradient(to bottom, black 0%, rgba(37, 37, 37, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00252525', GradientType=0);
-  content: '';
-  display: block;
-  height: 100px;
+  margin-top: 21.5%;
 }
-/* line 19, ../Sass/Sites.scss */
+/* line 120, ../Sass/Sites.scss */
 .sites::after {
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0) 0, black 100%);
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0), black 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(37, 37, 37, 0) 0, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000',GradientType=0);
 }
-/* line 28, ../Sass/Sites.scss */
+/* line 129, ../Sass/Sites.scss */
 .sites .site {
   background-color: mediumseagreen;
-  display: table-cell;
-  min-height: 500px;
+  float: left;
   position: relative;
   width: 50%;
 }
-/* line 35, ../Sass/Sites.scss */
+/* line 135, ../Sass/Sites.scss */
 .sites .site div {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+/* line 143, ../Sass/Sites.scss */
+.sites .site:nth-of-type(1), .sites .site:nth-of-type(2) {
+  margin-top: -25%;
 }
